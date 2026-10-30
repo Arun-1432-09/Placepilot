@@ -1,0 +1,92 @@
+{
+  "model_type": "RandomForestClassifier with StandardScaler",
+  "trained_at": "2026-10-30T02:05:56.744795+00:00",
+  "n_samples": 2000,
+  "features": [
+    "cgpa",
+    "aptitude_score",
+    "technical_score",
+    "communication_score",
+    "coding_score",
+    "projects_count",
+    "internships_count",
+    "certifications_count",
+    "backlogs_count",
+    "resume_readiness"
+  ],
+  "classes": [
+    "Needs Preparation",
+    "Developing",
+    "Placement Ready"
+  ],
+  "metrics": {
+    "accuracy": 0.8525,
+    "precision_weighted": 0.862,
+    "recall_weighted": 0.8525,
+    "f1_score_weighted": 0.8306,
+    "confusion_matrix": [
+      [
+        36,
+        18,
+        0
+      ],
+      [
+        10,
+        295,
+        0
+      ],
+      [
+        0,
+        31,
+        10
+      ]
+    ],
+    "class_report": {
+      "Needs Preparation": {
+        "precision": 0.782608695652174,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.72,
+        "support": 54.0
+      },
+      "Developing": {
+        "precision": 0.8575581395348837,
+        "recall": 0.9672131147540983,
+        "f1-score": 0.9090909090909091,
+        "support": 305.0
+      },
+      "Placement Ready": {
+        "precision": 1.0,
+        "recall": 0.24390243902439024,
+        "f1-score": 0.39215686274509803,
+        "support": 41.0
+      },
+      "accuracy": 0.8525,
+      "macro avg": {
+        "precision": 0.8800556117290191,
+        "recall": 0.6259274068150517,
+        "f1-score": 0.673749257278669,
+        "support": 400.0
+      },
+      "weighted avg": {
+        "precision": 0.8620402553083923,
+        "recall": 0.8525,
+        "f1-score": 0.8305778966131906,
+        "support": 400.0
+      }
+    }
+  },
+  "feature_importances": {
+    "cgpa": 0.1963,
+    "aptitude_score": 0.0704,
+    "technical_score": 0.0783,
+    "communication_score": 0.0567,
+    "coding_score": 0.0976,
+    "projects_count": 0.0285,
+    "internships_count": 0.0606,
+    "certifications_count": 0.022,
+    "backlogs_count": 0.3491,
+    "resume_readiness": 0.0405
+  },
+  "dataset_origin": "Synthetic institutional training data (reproducible seed 42)",
+  "intended_use": "Educational campus placement readiness guidance and skill gap detection."
+}
